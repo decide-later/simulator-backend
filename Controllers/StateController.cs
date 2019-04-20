@@ -10,17 +10,19 @@ namespace simulator_backend.Controllers
     [ApiController]
     public class StateController : ControllerBase
     {
-        // GET api/state/current
+        // GET api/state
         [HttpGet]
         public ActionResult<IEnumerable<string>> Get()
         {
             return new string[] { "value1", "value2" };
         }
 
-        // POST api/state/transit
+        // POST api/state
         [HttpPost]
         public void Post([FromBody] string value)
         {
+            // TODO: deserialize JSON
+            // 
         }
     }
 }
