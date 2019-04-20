@@ -1,6 +1,6 @@
 namespace simulator_backend.Domain.Models
 {
-    interface State
+    public interface State
     {
         string getName();
         string getType();

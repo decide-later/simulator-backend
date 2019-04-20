@@ -1,6 +1,6 @@
 namespace simulator_backend.Domain.Models
 {
-    interface Achievement
+    public interface Achievement
     {
         string getName();
         int getValue();

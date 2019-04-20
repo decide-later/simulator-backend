@@ -2,7 +2,7 @@ namespace simulator_backend.Domain.Models
 {
     public class FinishState : State
     {
-        private string Name;
+        private readonly string Name;
 
         public FinishState(string Name)
         {
