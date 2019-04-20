@@ -1,0 +1,12 @@
+{
+    "name": "sims-helper",
+    "description": "The server to advertise the available variables",
+    "version": "1.0.0",
+    "license": "http://flequesboard.com/licenses/enose/admin",
+    "scripts": {
+        "start": "node index.js"
+    },
+    "dependencies": {
+        "mongodb": "^3.2.3"
+    }
+}
