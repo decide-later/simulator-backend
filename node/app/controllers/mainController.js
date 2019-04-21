@@ -1,7 +1,11 @@
 'use strict'
-let activities = {
+const MongoClient = require('mongodb').MongoClient;
+const assert = require('assert');
+const fs = require("fs");
+
+let tracks = {
     "main": {
-        "mobile_travel" : "Мобильный помощник в путешествиях",
+        "travel" : "Мобильный помощник в путешествиях",
         "using_mobile" : "Мобильные устройства: общие характеристики и функции",
         "internet_ethics" : "Мобильная и Интернет-безопасность. Мобильный этикет.",
         "mail_search" : "Почтовые сервисы и поисковые системы.",
@@ -16,25 +20,33 @@ let activities = {
         "mobile_hobby" : "Мобильный помощник для хобби и развлечения",
         "blogs" : "Блогосфера. Форумы. Интернет-реклама",
         "mass_media" : "Интернет-телевидение и радио. Новостные ресурсы"
-    }
+    },
+    "template": ["buttonlist"],
+    "components": [
+
+    ]
 };
+const exampleViews = JSON.parse(fs.readFileSync("controllers/data.json"));
+
 const getView = (key, level) => {
-    if(activities["main"][key]){
-        return {
-            "title" : activities["main"][key],
-            "level" : level || 0,
-            "template": "plaintxt"
-        }
+    console.log(key,level)
+    if(tracks["main"][key]){
+        let index = exampleViews.findIndex(a => {
+            return a.level === Number.parseInt(level) && a.case === key;
+        })
+        index = (index < 0 )?  2 : index;
+        //Math.floor(Math.random() * 10) % exampleViews.length;
+        return exampleViews[index];
     }
-    return activities["main"]
+    return tracks["main"]
 }
 
 exports.get_activities = function(req, res){
-    res.json(activities["main"]);
+    res.json(tracks["main"]);
 }
 
 exports.current_view = function (req, res){
-    let key = req.query.view || "mobile_travel";
+    let key = req.query.view || "main";
     let level = req.query.level || 0;
     res.json(getView(key, level));
 }

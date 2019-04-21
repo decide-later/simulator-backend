@@ -1,0 +1,300 @@
+[
+    {
+        "case": "travel",
+        "level" : 0,
+        "id" : "destination",
+        "weight" : 1,
+        "age" : [1,2],
+        "soundtrack" : "space_oddity",
+        "classes": {
+            "container" : "",
+            "question" : "",
+            "answer_container": ""
+        },
+        "bg" : {
+            "type" : "static",
+            "image" : ["bg_blue"]
+        },
+        "question" : {
+            "question": "Куда поедем?",
+            "answers": [],
+            "component": "map_picker"
+        }
+    },
+    {
+        "case": "travel",
+        "level" : 1,
+        "id" : "docs",
+        "weight" : 1,
+        "age" : [1,2],
+        "soundtrack" : "space_oddity",
+        "classes": {
+            "container" : "",
+            "question" : "",
+            "answer_container": ""
+        },
+        "bg" : {
+            "type" : "static",
+            "image" : ["bg_blue"]
+        },
+        "question" : {
+            "question": "Для поездки нужно оформить документы. Выбери, какие документы нужны для для выбранного путешествия",
+            "answers": [],
+            "component": "checkbox",
+            "options": [
+                {
+                    "value": "passport",
+                    "cost": "",
+                    "caption": {
+                        "type" : "image_text",
+                        "text" : {
+                            "value" : "паспорт"
+                        },
+                        "image" : {
+                            "value": "passport"
+                        },
+                        "classses" : ""
+                    }
+                },
+                {
+                    "value": "insurance",
+                    "cost": "",
+                    "caption": {
+                        "type" : "image_text",
+                        "text" : {
+                            "value" : "полис"
+                        },
+                        "image" : {
+                            "value": "insurance"
+                        },
+                        "classses" : ""
+                    }
+                },{
+                    "value": "snilz",
+                    "cost": "",
+                    "caption": {
+                        "type" : "text",
+                        "text" : {
+                            "value" : "СНИЛС"
+                        },
+                        "image" : {
+                            "value": "snilz"
+                        },
+                        "classses" : ""
+                    }
+                },{
+                    "value": "birth_cert",
+                    "cost": "",
+                    "caption": {
+                        "type" : "text",
+                        "text" : {
+                            "value" : "свидетельство о рождениит"
+                        },
+                        "classses" : ""
+                    }
+                },{
+                    "value": "recommendation",
+                    "cost": "",
+                    "caption": {
+                        "type" : "text",
+                        "text" : {
+                            "value" : "рекомендации"
+                        },
+                        "classses" : ""
+                    }
+                },{
+                    "value": "air",
+                    "cost": "",
+                    "caption": {
+                        "type" : "",
+                        "text" : {
+                            "value" : "анкета"
+                        },
+                        "classses" : ""
+                    }
+                },{
+                    "value": "air",
+                    "cost": "",
+                    "caption": {
+                        "type" : "text",
+                        "text" : {
+                            "value" : "трудовая книжка"
+                        },
+                        "classses" : ""
+                    }
+                }
+
+            ]
+        }
+    },{
+        "case": "travel",
+        "level" : 2,
+        "age" : [1,2],
+        "soundtrack" : "space_oddity",
+        "classes": {
+            "container" : "",
+            "question" : "",
+            "answer_container": ""
+        },
+        "bg" : {
+            "type" : "static",
+            "image" : ["bg_blue"]
+        },
+        "question" : {
+            "question": "Вибери вид транспорт",
+            "answers": [],
+            "component": "checkbox",
+            "options": [
+                {
+                    "value": "air",
+                    "cost": "",
+                    "caption": {
+                        "type" : "image_text",
+                        "text" : {
+                            "value" : "air"
+                        },
+                        "image" : {
+                            "value": "air"
+                        },
+                        "classses" : ""
+                    }
+                },{
+                    "value": "ship",
+                    "cost": "",
+                    "caption": {
+                        "type" : "image",
+                        "text" : {
+                            "value" : "ship"
+                        },
+                        "image" : {
+                            "value": "ship"
+                        },
+                        "classses" : ""
+                    }
+                },{
+                    "value": "bus",
+                    "cost": "",
+                    "caption": {
+                        "type" : "image_text",
+                        "text" : {
+                            "value" : "bus"
+                        },
+                        "image" : {
+                            "value": "bus"
+                        },
+                        "classses" : ""
+                    }
+                }
+            ]
+        }
+    },{
+        "case": "travel",
+        "level" : 3,
+        "age" : [1,2],
+        "soundtrack" : "space_oddity",
+        "classes": {
+            "container" : "",
+            "question" : "",
+            "answer_container": ""
+        },
+        "bg" : {
+            "type" : "static",
+            "image" : ["bg_blue"]
+        },
+        "question" : {
+            "question": "Вибери вид транспорт",
+            "answers": [],
+            "component": "checkbox",
+            "options": [
+                {
+                    "value": "air",
+                    "cost": "",
+                    "caption": {
+                        "type" : "image_text",
+                        "text" : {
+                            "value" : "air"
+                        },
+                        "image" : {
+                            "value": "air"
+                        },
+                        "classses" : ""
+                    }
+                },{
+                    "value": "ship",
+                    "cost": "",
+                    "caption": {
+                        "type" : "image",
+                        "text" : {
+                            "value" : "ship"
+                        },
+                        "image" : {
+                            "value": "ship"
+                        },
+                        "classses" : ""
+                    }
+                },{
+                    "value": "bus",
+                    "cost": "",
+                    "caption": {
+                        "type" : "image_text",
+                        "text" : {
+                            "value" : "bus"
+                        },
+                        "image" : {
+                            "value": "bus"
+                        },
+                        "classses" : ""
+                    }
+                }
+            ]
+        }
+    },{
+        "case": "travel",
+        "level" : 4,
+        "age" : [1,2],
+        "soundtrack" : "space_oddity",
+        "classes": {
+            "container" : "",
+            "question" : "",
+            "answer_container": ""
+        },
+        "bg" : {
+            "type" : "static",
+            "image" : ["bg_blue"]
+        },
+        "question" : {
+            "question": "<img src='image/labels/thief.png' />привет, я предлагаю отличные предложения для таких счастливых людей, как ты. Не могли бы вы дать мне несколько деталей, и я немедленно заключил сделку для вас.",
+            "answers": [],
+            "component": "radio",
+            "options": [
+                {
+                    "value": "yes",
+                    "cost": "",
+                    "caption": {
+                        "type" : "text",
+                        "text" : {
+                            "value" : "да"
+                        },
+                        "image" : {
+                            "value": "да"
+                        },
+                        "classses" : ""
+                    }
+                },{
+                    "value": "no",
+                    "cost": "",
+                    "caption": {
+                        "type" : "text",
+                        "text" : {
+                            "value" : "нет"
+                        },
+                        "image" : {
+                            "value": "нет"
+                        },
+                        "classses" : ""
+                    }
+                }
+            ]
+        }
+    }
+]

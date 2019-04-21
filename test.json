@@ -1,0 +1,102 @@
+[
+    {
+        "case": "travel",
+        "level" : 0,
+        "id" : "destination",
+        "weight" : 1,
+        "age" : [1,2],
+        "soundtrack" : "space_oddity",
+        "classes": {
+            "container" : "",
+            "question" : "",
+            "answer_container": ""
+        },
+        "bg" : {
+            "type" : "static",
+            "image" : ["bg_blue"]
+        },
+        "question" : {
+            "question": "where do you want to go?",
+            "answers": [],
+            "component": "map_picker"
+        }
+    },
+    {
+        "case": "travel",
+        "level" : 1,
+        "id" : "budget",
+        "weight" : 1,
+        "age" : [1,2],
+        "soundtrack" : "space_oddity",
+        "classes": {
+            "container" : "",
+            "question" : "",
+            "answer_container": ""
+        },
+        "bg" : {
+            "type" : "static",
+            "image" : ["bg_blue"]
+        },
+        "question" : {
+            "question": "type in your budget",
+            "answers": [],
+            "component": "text",
+            "component_attr" : {
+                "min" : 1000,
+                "type" : "number"
+            }
+        }
+    },{
+        "case": "travel",
+        "level" : 2,
+        "age" : [1,2],
+        "soundtrack" : "space_oddity",
+        "classes": {
+            "container" : "",
+            "question" : "",
+            "answer_container": ""
+        },
+        "bg" : {
+            "type" : "static",
+            "image" : ["bg_blue"]
+        },
+        "question" : {
+            "question": "mode of transport",
+            "answers": [],
+            "component": "checkbox",
+            "options": [
+                {
+                    "value": "air",
+                    "cost": "",
+                    "caption": {
+                        "type" : "image_text",
+                        "text" : {
+                            "value" : "air"
+                        },
+                        "image" : {
+                            "value": "air"
+                        },
+                        "classses" : ""
+                    }
+                },{
+                    "value": "water",
+                    "cost": "",
+                    "caption": {
+                        "type" : "image",
+                        "value": "ship",
+                        "classses" : ""
+                    }
+                },{
+                    "value": "bus",
+                    "cost": "",
+                    "caption": {
+                        "type" : "image",
+                        "value": "bus",
+                        "classses" : ""
+                    }
+                }
+            ]
+        }
+    }
+
+]

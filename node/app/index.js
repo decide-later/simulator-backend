@@ -17,4 +17,4 @@ var express = require('express'),
 
 
     app.listen(port);
-    console.log('todo list RESTful API server started on: ' + port);
+    console.log('RESTful API server started on: ' + port);
